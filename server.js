@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 const JobbyUsersData = require("./models/jobbyUsers");
-const port = 4445|| process.env.PORT
+const port = 4446|| process.env.PORT
    
    app.use(express.json());
 
@@ -16,3 +16,4 @@ app.use("/auth", require("./routes/authRouters"));
 app.use("/api", require("./routes/apiRoutes"));
 
 app.listen(port, ()=> console.log(`server running at${port}`));
+

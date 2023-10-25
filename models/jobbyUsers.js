@@ -31,6 +31,6 @@ const jobbyUsersDataSchema = new mongoose.Schema({
 })
 
 
- const JobbyUsersData = mongoose.model('JobbyUserData', jobbyUsersDataSchema);
+ const JobbyUsersData = mongoose.model('JobbyUsersData', jobbyUsersDataSchema);
 
  module.exports = JobbyUsersData;

@@ -6,7 +6,7 @@ const jwtAuth = (req, res,next)=>{
     const authHeader = req.headers["authorization"];
 
     if(authHeader !== undefined){
-    jwtToken = authHeader.split("")[1]
+    jwtToken = authHeader.split(" ")[1]
 }
 
   if(jwtToken === undefined){

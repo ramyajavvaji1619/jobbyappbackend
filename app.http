@@ -1,0 +1,34 @@
+GET http://localhost:4446/
+
+###
+GET http://localhost:4446/auth/
+
+###
+GET http://localhost:4446/api
+
+###
+POST http://localhost:4446/auth/signup/
+Content-Type: application/json
+
+{
+  
+  "name":"sandhya",
+  "email":"sandhya909@gamil.com",
+  "phoneNumber":"8978980909",
+  "gender":"female",
+  "password":"sandhya55"
+  
+}
+
+###
+POST http://localhost:4446/auth/login
+Content-Type: application/json
+
+{
+     "email":"sandhya909@gamil.com",
+     "password":"sandhya55"
+}
+
+###
+GET  http://localhost:4446/auth/user-profile/
+
