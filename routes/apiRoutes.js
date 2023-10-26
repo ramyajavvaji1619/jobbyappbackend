@@ -22,7 +22,7 @@ router.get("/jobs",jwtAuth, async(req,res)=>{
 
    router.get("/filterjobs",jwtAuth,async(req,res)=>{
     try{
-             const {employement_type,minimum_package,search} = req.query;
+             const {employement_type} = req.query;
              console.log(employement_type)
           
 

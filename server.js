@@ -4,7 +4,7 @@ const {Jobs, JobDetails} = require("./models/jobs");
 const app = express();
 
 const JobbyUsersData = require("./models/jobbyUsers");
-const port = 4446|| process.env.PORT
+const port = 4447|| process.env.PORT
 
 
 
