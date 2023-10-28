@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const {Jobs, JobDetails} = require("./models/jobs");
 const app = express();
-
+const cors =require("cors");
 const JobbyUsersData = require("./models/jobbyUsers");
 const port = 4447|| process.env.PORT
 
@@ -78,7 +78,7 @@ const addJobs = async () => {
 
 
 
-   
+   app.use(cors());
    app.use(express.json());
 
 mongoose.connect('mongodb+srv://ramyajavvaji1619:ramya123@cluster0.wvm1yil.mongodb.net/?retryWrites=true&w=majority')
