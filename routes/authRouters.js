@@ -146,7 +146,7 @@ router.post("/login",async(req,res)=>{
                     id:isUserExist._id
                 }
                 //create a token
-                let token = jwt.sign(payload,'Ramya', {expiresIn:"1hr"})
+                let token = jwt.sign(payload,'Ramya', {expiresIn:"24hr"})
                 return res.status(200).json ({message:"Login Success", token: token})//it is usedfor frontend
             }else{
                 return res.status(401).json({message:"Password Not Matched"})
@@ -167,7 +167,7 @@ router.post("/login",async(req,res)=>{
 
 
 //profile API
-router.get("/user-profile", jwtAuth, async(req,res)=>{
+router.get("/profile", jwtAuth, async(req,res)=>{
     console.log(req.id);
     const user = await JobbyUsersData.findOne({_id:req.id})
     console.log(user);
