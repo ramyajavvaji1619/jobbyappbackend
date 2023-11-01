@@ -17,7 +17,7 @@ const {schema} = mongoose;
     companyLogoUrl: String,
     rating: Number,
     location:String,
-    employementType:String,
+    employmentType:String,
     packagePerAnnum:String,
     jobDescription:String
 
@@ -30,7 +30,7 @@ const {schema} = mongoose;
     companyWebsiteUrl:String,
     rating: Number,
     location:String,
-    employementType:String,
+    employmentType:String,
     packagePerAnnum:String,
     jobDescription:String,
     skills:[skillsSchema],

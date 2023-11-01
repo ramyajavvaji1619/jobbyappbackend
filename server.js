@@ -48,7 +48,7 @@ const addJobs = async () => {
         description: "Our core philosophy is people over process. Our culture has been instrumental to our success. It has helped us attract and retain stunning colleagues, making work here more satisfying. Entertainment, like friendship, is a fundamental human need, and it changes how we feel and gives us common ground. We want to entertain the world.",
         imageUrl:  "https://assets.ccbp.in/frontend/react-js/jobby-app/life-facebook-img.png"
       },
-      employmentType:"Internship",
+      employementType:"Internship",
     });
 
     const savedJobDetail = await jobDetail.save(); // saceJobDetails._id
@@ -73,7 +73,7 @@ const addJobs = async () => {
   }
 };
 
-                  // addJobs()
+   //  addJobs()
 
 
 

@@ -22,14 +22,14 @@ router.get("/jobs",jwtAuth, async(req,res)=>{
 
    router.get("/filterjobs",jwtAuth,async(req,res)=>{
     try{
-             const {employement_type, minimum_package, search} = req.query;
-            //  console.log(employement_type,minimum_package,search )
+             const { employmentType, minimum_package, search} = req.query;
+            //  console.log(employment_type,minimum_package,search )
           
            const query = {} ;
-           if(employement_type){
-            const employementTypesArray = employement_type.split(',');
+           if( employmentType){
+            const employmentTypesArray =  employmentType.split(',');
 
-            query.employementType = {$in:employementTypesArray.map(type=> new RegExp(type, 'i'))}
+            query. employmentType = {$in:employmentTypesArray.map(type=> new RegExp(type, 'i'))}
            }
             if(minimum_package){
                 const minpackageValue = parseFloat(minimum_package.replace(/\D+/g, ''));
