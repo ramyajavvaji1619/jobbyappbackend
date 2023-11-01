@@ -14,13 +14,13 @@ const port = 4447|| process.env.PORT
 const addJobs = async () => {
   try {
     const jobDetail = new JobDetails({
-      title:"Frontend Engineer",
-      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
-      companyWebsiteUrl:   "https://about.amazon.com/",
+      title:"Backend Engineer",
+      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png",
+      companyWebsiteUrl:   "https://about.facebook.com/",
       rating: 5,
-      location:"Hyderabad",
-      packagePerAnnum:"12 LPA",
-      jobDescription:"You will be part of a new team building a large-scale tier-1 rendering platform that supports as the skeleton for all the payment pages to depend, host, and render on, in Amazon Pay. This new system will be utilized by thousands of customers every day. ",
+      location:"Bangalore",
+      packagePerAnnum:"10 LPA",
+      jobDescription:"We are looking for a DevOps Engineer with a minimum of 5 years of industry experience, preferably working in the financial IT community. The position in the team is focused on delivering exceptional services to both BU and Dev partners to minimize/avoid any production outages. The role will focus on production support.",
       skills: [
         {
             name: "HTML 5",
@@ -48,7 +48,7 @@ const addJobs = async () => {
         description: "Our core philosophy is people over process. Our culture has been instrumental to our success. It has helped us attract and retain stunning colleagues, making work here more satisfying. Entertainment, like friendship, is a fundamental human need, and it changes how we feel and gives us common ground. We want to entertain the world.",
         imageUrl:  "https://assets.ccbp.in/frontend/react-js/jobby-app/life-facebook-img.png"
       },
-      employementType:"Internship",
+      employmentType:"Internship",
     });
 
     const savedJobDetail = await jobDetail.save(); // saceJobDetails._id
@@ -57,11 +57,11 @@ const addJobs = async () => {
     const job = new Jobs({
       _id: savedJobDetail._id, // Use the same _id as the JobDetail
       title:"Frontend Engineer",
-      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png",
       rating: 5,
       location:"Hyderabad",
       packagePerAnnum:"12 LPA",
-      jobDescription:"You will be part of a new team building a large-scale tier-1 rendering platform that supports as the skeleton for all the payment pages to depend, host, and render on, in Amazon Pay. This new system will be utilized by thousands of customers every day. ",
+      jobDescription:"We are looking for a DevOps Engineer with a minimum of 5 years of industry experience, preferably working in the financial IT community. The position in the team is focused on delivering exceptional services to both BU and Dev partners to minimize/avoid any production outages. The role will focus on production support.",
       employmentType:"Internship",
     });
 
@@ -73,7 +73,7 @@ const addJobs = async () => {
   }
 };
 
-   //  addJobs()
+      // addJobs()
 
 
 
