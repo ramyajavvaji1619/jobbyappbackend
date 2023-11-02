@@ -14,13 +14,13 @@ const port = 4447|| process.env.PORT
 const addJobs = async () => {
   try {
     const jobDetail = new JobDetails({
-      title:"Backend Engineer",
-      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png",
-      companyWebsiteUrl:   "https://about.facebook.com/",
+      title:"Data Scientist",
+      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+      companyWebsiteUrl:   "https://about.amazon.com/",
       rating: 5,
-      location:"Bangalore",
-      packagePerAnnum:"10 LPA",
-      jobDescription:"We are looking for a DevOps Engineer with a minimum of 5 years of industry experience, preferably working in the financial IT community. The position in the team is focused on delivering exceptional services to both BU and Dev partners to minimize/avoid any production outages. The role will focus on production support.",
+      location:"Chennai",
+      packagePerAnnum:"35 LPA",
+      jobDescription:"As a Data Scientist, you will evaluate and improve Google's products. You'll collaborate with a multi-disciplinary team of Engineers and Analysts on a wide range of problems, bringing analytical rigor and statistical methods to the challenges of measuring quality, improving consumer products, and understanding the behavior of end-users.",
       skills: [
         {
             name: "HTML 5",
@@ -45,10 +45,10 @@ const addJobs = async () => {
       ],
 
       lifeAtCompany: {
-        description: "Our core philosophy is people over process. Our culture has been instrumental to our success. It has helped us attract and retain stunning colleagues, making work here more satisfying. Entertainment, like friendship, is a fundamental human need, and it changes how we feel and gives us common ground. We want to entertain the world.",
-        imageUrl:  "https://assets.ccbp.in/frontend/react-js/jobby-app/life-facebook-img.png"
+        description: "The Experimentation Platform team builds internal tools with a big impact across the company. We are looking to add a UI engineer to our team to continue to improve our experiment analysis workflow and tools. Ideal candidates will be excited by direct contact with our users, fast feedback, and quick iteration.",
+        imageUrl:  "https://assets.ccbp.in/frontend/react-js/jobby-app/life-swiggy-img.png"
       },
-      employmentType:"Internship",
+      employmentType:"Freelance",
     });
 
     const savedJobDetail = await jobDetail.save(); // saceJobDetails._id
@@ -56,13 +56,13 @@ const addJobs = async () => {
 
     const job = new Jobs({
       _id: savedJobDetail._id, // Use the same _id as the JobDetail
-      title:"Frontend Engineer",
-      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png",
+      title:"Data Scientist",
+      companyLogoUrl:"https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
       rating: 5,
-      location:"Hyderabad",
-      packagePerAnnum:"12 LPA",
-      jobDescription:"We are looking for a DevOps Engineer with a minimum of 5 years of industry experience, preferably working in the financial IT community. The position in the team is focused on delivering exceptional services to both BU and Dev partners to minimize/avoid any production outages. The role will focus on production support.",
-      employmentType:"Internship",
+      location:"Chennai",
+      packagePerAnnum:"35 LPA",
+      jobDescription:"As a Data Scientist, you will evaluate and improve Google's products. You'll collaborate with a multi-disciplinary team of Engineers and Analysts on a wide range of problems, bringing analytical rigor and statistical methods to the challenges of measuring quality, improving consumer products, and understanding the behavior of end-users.",
+      employmentType:"Freelance",
     });
 
 
@@ -72,8 +72,7 @@ const addJobs = async () => {
     console.log(e);
   }
 };
-
-      // addJobs()
+            // addJobs()
 
 
 
