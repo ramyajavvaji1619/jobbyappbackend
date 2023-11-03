@@ -51,7 +51,7 @@ const addJobs = async () => {
       employmentType:"Freelance",
     });
 
-    const savedJobDetail = await jobDetail.save(); // saceJobDetails._id
+    const savedJobDetail = await jobDetail.save(); // saveJobDetails._id
     // Create and save a Job document that uses the same _id as the JobDetail
 
     const job = new Jobs({
